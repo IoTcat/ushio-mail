@@ -11,7 +11,16 @@ var mail = (url) => {
 
 	var send = (to, subject, body, from) => {
 		return new Promise((resolve, reject) => {
-			request(url + `?to=${to}&subject=${subject}&body=${body}&from=${from}`, (err, res, body) => {
+			request.post({
+				"url": url,
+				formData: {
+					"to": to,
+					"subject": subject,
+					"body": body,
+					"from": from
+				}
+			}, 
+			(err, res, body) => {
 				resolve(body);
 			});
 		});
