@@ -1,0 +1,26 @@
+{
+  "name": "ushio-mail",
+  "version": "1.0.0",
+  "description": "ushio mail module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iotcat/ushio-mail.git"
+  },
+  "keywords": [
+    "mail",
+    "ushio"
+  ],
+  "author": "iotcat",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/iotcat/ushio-mail/issues"
+  },
+  "homepage": "https://github.com/iotcat/ushio-mail#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
